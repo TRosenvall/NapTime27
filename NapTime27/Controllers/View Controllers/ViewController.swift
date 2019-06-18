@@ -17,26 +17,33 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        timer.delegate = self
     }
     
     @IBAction func napButtonTapped(_ sender: Any) {
-        
+        if timer.isOn {
+            timer.stopTimer()
+        } else {
+            timer.startTimer(5)
+        }
+        updateButton()
+        updateLabel()
     }
     
     func updateLabel() {
-        
+        if timer.isOn {
+            timerLabel.text = "\(timer.timeRemaining)"
+        } else {
+            timerLabel.text = "20:00"
+        }
     }
     
     func updateButton() {
-        
-    }
-    
-    func startTimer() {
-        
-    }
-    
-    func stopTimer() {
-        
+        if timer.isOn {
+            napButton.setTitle("Cancel Nap", for: .normal)
+        } else {
+            napButton.setTitle("Start Nap", for: .normal)
+        }
     }
     
     func setTimer() {
@@ -45,15 +52,18 @@ class ViewController: UIViewController {
 }
 
 extension ViewController: MyTimerDelegate{
-    func timerStart() {
-        <#code#>
+    func timerComplete() {
+        updateButton()
+        updateLabel()
+        // Call the display alert Controller func
     }
     
     func timerStop() {
-        <#code#>
+        updateButton()
+        updateLabel()
     }
     
     func timerSecondTicked() {
-        <#code#>
+        updateLabel()
     }
 }
