@@ -11,6 +11,7 @@
 		851F021B22B9471100B32D2A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 851F021922B9471100B32D2A /* Main.storyboard */; };
 		851F021D22B9471200B32D2A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 851F021C22B9471200B32D2A /* Assets.xcassets */; };
 		851F022022B9471200B32D2A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 851F021E22B9471200B32D2A /* LaunchScreen.storyboard */; };
+		851F022E22B94BAD00B32D2A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 851F022D22B94BAD00B32D2A /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		851F021C22B9471200B32D2A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		851F021F22B9471200B32D2A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		851F022122B9471200B32D2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		851F022D22B94BAD00B32D2A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 		851F022C22B9483300B32D2A /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				851F022D22B94BAD00B32D2A /* ViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -180,6 +183,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				851F022E22B94BAD00B32D2A /* ViewController.swift in Sources */,
 				851F021622B9471100B32D2A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -328,7 +332,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YY8J3FPYX8;
-				INFOPLIST_FILE = NapTime27/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/NapTime27/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -346,7 +350,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YY8J3FPYX8;
-				INFOPLIST_FILE = NapTime27/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/NapTime27/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
