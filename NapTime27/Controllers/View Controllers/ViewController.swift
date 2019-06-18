@@ -18,5 +18,26 @@ class ViewController: UIViewController {
     }
     
     @IBAction func napButtonTapped(_ sender: Any) {
+        
+    }
+    
+    func updateLabel() {
+        
+    }
+    
+    func updateButton() {
+        
+    }
+    
+    func startTimer() {
+        
+    }
+    
+    func stopTimer() {
+        
+    }
+    
+    func setTimer() {
+        
     }
 }
